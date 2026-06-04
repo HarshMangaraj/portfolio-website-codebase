@@ -1,8 +1,8 @@
 import { createFileRoute } from "@tanstack/react-router";
 import { motion, useScroll, useTransform, useSpring } from "motion/react";
 import { useRef } from "react";
-import heroBg from "@/assets/hero-bg-v2.mp4.asset.json";
-import ctaBg from "@/assets/cta-bg.mp4.asset.json";
+import heroBg from "../assets/hero-bg-v2.mp4";
+import ctaBg from "../assets/cta-bg.mp4";
 
 export const Route = createFileRoute("/")({
   component: Index,
