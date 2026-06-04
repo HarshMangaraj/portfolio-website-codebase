@@ -83,7 +83,7 @@ function Nav() {
             </a>
           ))}
         </nav>
-        <a href="#contact" className="ml-1 btn-pill !h-9 !px-4 !text-[13px]">
+        <a href="#contact" className="ml-1 btn-pill h-9! px-4! text-[13px]!">
           Let's talk →
         </a>
       </motion.div>
@@ -104,7 +104,7 @@ function Hero() {
     <section
       ref={ref}
       id="top"
-      className="relative min-h-[100svh] w-full overflow-hidden flex items-center justify-center px-6 md:px-10"
+      className="relative min-h-svh w-full overflow-hidden flex items-center justify-center px-6 md:px-10"
     >
       <motion.div style={{ scale }} className="absolute inset-0 z-0">
         <video className="media-bg" autoPlay muted loop playsInline preload="auto" src={heroBg.url} />
@@ -190,8 +190,8 @@ function Marquee() {
   ];
   return (
     <section className="relative py-12 border-y border-white/10 overflow-hidden bg-black/30">
-      <div className="absolute inset-y-0 left-0 w-32 z-10 bg-gradient-to-r from-background to-transparent pointer-events-none" />
-      <div className="absolute inset-y-0 right-0 w-32 z-10 bg-gradient-to-l from-background to-transparent pointer-events-none" />
+      <div className="absolute inset-y-0 left-0 w-32 z-10 bg-linear-to-r from-background to-transparent pointer-events-none" />
+      <div className="absolute inset-y-0 right-0 w-32 z-10 bg-linear-to-l from-background to-transparent pointer-events-none" />
       <div className="overflow-hidden whitespace-nowrap">
         <div className="marquee-track">
           {[...items, ...items].map((it, i) => (
@@ -593,7 +593,7 @@ function Contact() {
   return (
     <section
       id="contact"
-      className="relative min-h-[100svh] w-full overflow-hidden flex flex-col justify-center px-6 md:px-10 py-24 border-t border-white/10"
+      className="relative min-h-svh w-full overflow-hidden flex flex-col justify-center px-6 md:px-10 py-24 border-t border-white/10"
     >
       <video className="media-bg" autoPlay muted loop playsInline preload="auto" src={ctaBg.url} />
       <div className="media-veil" />
